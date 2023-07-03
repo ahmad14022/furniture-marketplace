@@ -1,0 +1,294 @@
+body {
+  margin: 0;
+  padding: 0;
+  background: #f5f5f5;
+  font-family: sans-serif;
+}
+
+header {
+  color: #281e5a;
+  background: #fff;
+  padding: 1em;
+  height: 5vh; 
+  font-weight: 800;
+  z-index: 100;
+  box-shadow: 0 6px 10px #bbbbbb59;
+  display: flex;
+  justify-content: space-between;
+  position: fixed;
+  width: calc(100% - 2em);
+  top: 0;
+}
+
+.cart-login {
+  display: flex;
+  gap: 0.5rem;
+}
+
+#logo {
+  font-size: 1.2em;
+  align-items: center;
+  display: flex;
+}
+
+#cart {
+  cursor: pointer;
+  font-size: .8em;
+  margin: 0 10px;
+  position: relative;
+  bottom: 20px;
+  text-align: right;
+}
+
+#cart i {
+  font-size: 1.2em;
+}
+
+#cart-count-container {
+  position: relative;
+  height: 130%;
+  display: inline-block;
+}
+
+#cart-count {
+  position: absolute;
+  top: 30px;
+  right: -5px;
+  background: rgb(221, 15, 15);
+  border-radius: 50%;
+  padding: 2px;
+  color: #fff;
+  font-size: .85em;
+}
+
+.section {
+  background: #fff;
+}
+
+.content-title {
+  font-size: 1.1em;
+  margin: 1em 1.5em 1em 1.5em;
+  font-weight: 600;
+  font-weight: bold;
+}
+
+#rec-products {
+  margin: 1em;
+  min-height: calc(100vh - 10vh - 2em - 2em - 1em - 2em);
+  padding: 1em;
+  margin-top: 10vh;
+}
+
+.product-list {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 1rem 0 2rem 1rem;
+  gap: 20px;
+}
+
+.button-container {
+  display: flex;
+  justify-content: flex-end;
+  padding: 0.5rem;
+  gap: 0.5rem;
+}
+
+.input-qty {
+  width: 10%;
+  text-align: center;
+  border: none;
+}
+
+.product {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 1.5em;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 0.5rem;
+  padding: 1rem;
+  border: 1px solid #727272;
+  border-radius: 1rem;
+  flex-basis: 300px;
+}
+
+.card:hover {
+  box-shadow: 5px 5px 5px rgba(209, 209, 209, 0.5);
+}
+
+.product .product-img-container {
+  text-align: center;  
+}
+
+.product img {
+  width: 10em;
+  display: inline-block;
+  height: 12em;
+}
+
+.product p {
+  margin: 0;
+}
+
+.title {
+  font-size: 1.2rem;
+  font-weight: 600;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 150%;
+  letter-spacing: normal;
+  color: #151515;
+}
+
+.category {
+  background:#281e5a;
+  color: #FFF;
+  padding: 0.5rem;
+  width: fit-content;
+  border-radius: 5px;
+}
+
+.description {
+  font-size: 0.9rem;
+  line-height: 1.5;
+}
+
+.price {
+  color: #0060ae;
+  font-weight: 700;
+  font-size: 16px;
+  margin-top: .5em;
+  margin-bottom: 1em;
+}
+
+.plus-qty,
+.minus-qty,
+.add-to-cart {
+  background-color: rgb(25, 27, 29);
+  color: #FFF;
+  border: none;
+  padding: 0.5rem;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+#login-btn button{
+  background: rgb(25, 27, 29);
+  color: white;  
+  border-radius: 10px; 
+  padding: .5em 1em;
+  cursor: pointer;
+}
+
+#btn-checkout{
+  background: rgb(25, 27, 29);
+  color: white;  
+  border-radius: 10px; 
+  padding: .5em 1em;
+  cursor: pointer;
+}
+
+.triangle-up {
+	width: 0;
+	height: 0;
+	border-left: 13px solid transparent;
+	border-right: 13px solid transparent;
+	border-bottom: 26px solid #fff;
+  position: absolute;
+  top: -13px;
+  right: 25px;
+}
+
+#cart-list {
+  position: fixed;
+  top: 8vh;
+  right: 0;
+  width: 20em;
+  background: #fff;
+  z-index: 5;
+  box-shadow: 0 6px 10px #bbbbbb59;
+}
+.cart-list-title {
+  font-weight: 800;
+  padding: .5em .5em;
+  padding-bottom: 1em;
+  border-bottom: 1px solid #f3f3f3;
+}
+
+.added-item-container {
+  max-height: 450px; /* Atur ketinggian sesuai kebutuhan */
+  overflow-y: scroll; /* Aktifkan scrolling vertical */
+}
+
+.product-desc {
+  background-color: #f0f0f0;
+  padding: 20px;
+  border-radius: 5px;
+}
+
+.added-item {
+  display: flex;
+  gap: 1rem;
+}
+
+.added-item-list {
+  padding: 0.5rem;
+  border-bottom: 1px solid #ebebeb
+}
+
+.added-item-list:hover {
+  background: #f3f3f3;
+}
+
+.added-item-title {
+  margin: 0 .5em;
+}
+
+.added-item-img {
+  width: 4em;
+  padding: 0.5rem;
+}
+
+.added-item-img img {
+  max-width: 100px;
+  max-height: 100px;
+}
+
+.total-price {
+  border-top: 1px solid #f3f3f3;
+  display: flex;
+  justify-content: space-between;
+  padding: 0 .5em;
+  font-weight: 800;
+}
+
+#total-price-value{
+  color: red;
+}
+
+footer {
+  height: 7vh;
+  background: rgb(25, 27, 29);;
+  color: #fff;
+  text-align: center;
+  padding: .5em;
+}
+
+footer p {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.d-flex {
+  display: flex;
+}
+
+.justify-content-end {
+  justify-content: end;
+}
